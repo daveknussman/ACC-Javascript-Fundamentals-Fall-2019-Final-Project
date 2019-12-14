@@ -1,0 +1,177 @@
+header {
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  background-color: cadetblue;
+}
+body {
+  background-color: rgb(233, 235, 238);
+  margin: 0;
+}
+#headerleftimage {
+  width: 100px;
+  object-fit: cover;
+  border: black;
+  border-style: solid;
+  border-width: 1px;
+}
+#sitetitle {
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+  font-family: "Monotype Corsiva", "Avant Garde", Arial, sans-serif;
+  /* font-family: Veranda, Arial, sans-serif;  */
+  font-size: 36px;
+  margin-left: 25px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 3px 0 0 0;
+  background-color: #96d8e0;
+}
+
+main > article {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainheader {
+  display:flex;
+  justify-content: center;
+  height: 60px;
+}
+#searchWord {
+  width: 500px;
+  /* height: 30px; */
+  font-size: 10pt;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#searchButton {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.leftpanel {
+  width: 50vw;
+  height: 70vh;
+  font-size: 3vh;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  background-color: lightskyblue;
+}
+
+.rightpanel {
+  width: 50vw;
+  height: 70vh;
+  font-size: 3vh;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  background-color: teal;
+}
+
+.rightpanel > p {
+  padding-left: 20px;
+}
+
+.rightpanel > ul {
+  list-style-type:none;
+}
+
+footer {
+  background-color: aquamarine;
+  overflow: auto;
+  text-align: center;
+}
+
+footer i {
+  padding: 5px;
+  font-size: 3em;
+}
+
+footer i:hover {
+  color: purple;
+}
+
+@media only screen and (max-width: 1000px) {
+  main {
+    background-color: purple;
+  }
+}
+
+/* nav {
+    display: flex;
+    justify-content: right;
+  } 
+ .nav-container {
+  margin: 3px 0 0 0;
+  background-color: gray;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-container > a {
+  text-decoration: none;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 0.85em;
+  width: 120px;
+  padding: 5px; /* this is how i changed the height of the link - padding is the space around the text which changed the height of the a*/
+  /* transition: background-color 500ms;
+}
+.nav-container > a:hover {
+  background-color: lightgray;
+  width: 250px; 
+}
+
+.nav-link {
+  transition: background-color 3s, width 3s;
+  
+  transition: 3s;
+  transition: width 5s;
+  
+} */
+
+
+
+/* .food {
+  width : 70vw;
+  display:flex;
+  flex-direction : row;
+  justify-content: space-evenly;
+}
+
+.food > img {
+  width : 600px;
+}
+
+.desserts {
+  width : 70vw;
+  display:flex;
+  flex-direction : row;
+  justify-content: space-evenly;
+}
+
+.desserts > img {
+  height : 200px;
+}
+
+.breakfast {
+  height : 170px;
+}
+
+#mansionimage {
+  width : 70vw;
+  padding-left: 50px;
+}
+
+#signupimage {
+  width :200px;
+} */
+
+
+/* form {
+  font-family: 'Courier New', Courier, monospace; */
