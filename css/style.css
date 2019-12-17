@@ -2,7 +2,8 @@ header {
   height: 100px;
   width: 100vw;
   display: flex;
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
+  background-color: #63686e;
 }
 body {
   background-color: rgb(233, 235, 238);
@@ -11,13 +12,13 @@ body {
 #headerleftimage {
   width: 100px;
   object-fit: cover;
-  border: black;
+  /* border: black;
   border-style: solid;
-  border-width: 1px;
+  border-width: 1px; */
 }
 #sitetitle {
-  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
-  font-family: "Monotype Corsiva", "Avant Garde", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* font-family: "Avant Garde", "Monotype Corsiva", Arial, sans-serif; */
   /* font-family: Veranda, Arial, sans-serif;  */
   font-size: 36px;
   margin-left: 25px;
@@ -27,7 +28,8 @@ main {
   display: flex;
   flex-direction: column;
   margin: 3px 0 0 0;
-  background-color: #96d8e0;
+  /* background-color: #96d8e0; */
+  background-color: #63686e;
 }
 
 main > article {
@@ -45,8 +47,8 @@ main > article {
   /* height: 30px; */
   font-size: 10pt;
   font-family: Arial, Helvetica, sans-serif;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
 }
 
 #searchButton {
@@ -60,7 +62,11 @@ main > article {
   font-size: 3vh;
   font-family: Arial, Helvetica, sans-serif;
   padding: 20px;
-  background-color: lightskyblue;
+  /* background-color: lightskyblue; */
+  background-color: #7e97a6;
+  border: black;
+  border-style: solid;
+  border-width: 1px; 
 }
 
 .rightpanel {
@@ -69,7 +75,11 @@ main > article {
   font-size: 3vh;
   font-family: Arial, Helvetica, sans-serif;
   padding: 20px;
-  background-color: teal;
+  /* background-color: teal; */
+  background-color: #7e97a6;
+  border: black;
+  border-style: solid;
+  border-width: 1px; 
 }
 
 .rightpanel > p {
