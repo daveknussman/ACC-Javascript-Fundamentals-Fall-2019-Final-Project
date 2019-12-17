@@ -3,7 +3,7 @@
     // const myPrivateVar = 'hidden';
 
     const displayMovieResults = () => {
-  
+      
         leftObject.innerText = 'Status=' + movieSearchResults.status + ' Number of Results ' + movieSearchResults.data.total_results;
 
         let nameArray = [] ; 
