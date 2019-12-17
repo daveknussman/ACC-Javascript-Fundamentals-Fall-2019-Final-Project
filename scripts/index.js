@@ -36,12 +36,12 @@ async function search(searchValue) {
 };
 
 // Display Search Results
-const displayMovieResults = () => {
-    console.log(movieSearchResults);
-    leftObject.innerText = 'Status=' + movieSearchResults.status + ' Number of Results ' + movieSearchResults.data.total_results;
-};
+// const displayMovieResults = () => {
+//     console.log(movieSearchResults);
+//     leftObject.innerText = 'Status=' + movieSearchResults.status + ' Number of Results ' + movieSearchResults.data.total_results;
+// };
 
-const displayTVResults = () => {
-    console.log(tvSearchResults);
-    rightObject.innerText = 'Status=' + tvSearchResults.status + ' Number of Results ' + tvSearchResults.data.total_results;
-};
+// const displayTVResults = () => {
+//     console.log(tvSearchResults);
+//     rightObject.innerText = 'Status=' + tvSearchResults.status + ' Number of Results ' + tvSearchResults.data.total_results;
+// };
