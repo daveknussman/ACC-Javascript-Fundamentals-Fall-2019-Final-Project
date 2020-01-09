@@ -4,11 +4,14 @@
     
     const displayMovieResults = () => 
     {   leftObject.innerText = movieSearchResults.data.total_results + ' movies found that matches search criteria' ;
+        if(movieSearchResults.data.total_results > 0)
+        {
         dropdown1.classList.remove('displaynone') ; 
         let displayHEADING = document.createElement("OPTION") ;
         displayHEADING.innerText = "Select a movie" ;
         displayHEADING.value = "" ;
-        document.querySelector("#dropdown1").appendChild(displayHEADING) ;    
+        document.querySelector("#dropdown1").appendChild(displayHEADING) ;  
+        }   
 
         (movieSearchResults.data.results).forEach((val)=>
         { 

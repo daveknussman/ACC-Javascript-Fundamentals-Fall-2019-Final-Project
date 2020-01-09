@@ -4,11 +4,14 @@
     
   const displayTVResults = () => 
   {   rightObject.innerText = tvSearchResults.data.total_results + ' TV shows found that matches search criteria'  ;
+      if(tvSearchResults.data.total_results > 0)
+      {  
       dropdown2.classList.remove('displaynone') ; 
       let displayHEADING = document.createElement("OPTION") ;
       displayHEADING.innerText = "Select a t.v. show." ;
       displayHEADING.value = "" ;
       document.querySelector("#dropdown2").appendChild(displayHEADING) ;   
+      }    
       (tvSearchResults.data.results).forEach((val)=>
       {
         let displayTITLE = document.createElement("OPTION") ;
