@@ -3,8 +3,7 @@
 (() => {
     
     const displayMovieResults = () => 
-    {   leftObject.innerText = 'Status=' + movieSearchResults.status + ' Number of Results '
-                                 + movieSearchResults.data.total_results ;
+    {   leftObject.innerText = movieSearchResults.data.total_results + ' movies found that matches search criteria' ;
         
         (movieSearchResults.data.results).forEach((val)=>
         {

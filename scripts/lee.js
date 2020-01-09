@@ -3,8 +3,7 @@
 (() => {
     
   const displayTVResults = () => 
-  {   rightObject.innerText = 'Status=' + tvSearchResults.status + ' Number of Results '
-                               + tvSearchResults.data.total_results ;
+  {   rightObject.innerText = tvSearchResults.data.total_results + ' TV shows found that matches search criteria'  ;
       
       (tvSearchResults.data.results).forEach((val)=>
       {

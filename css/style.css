@@ -58,7 +58,7 @@ main > article {
 
 .leftpanel {
   width: 50vw;
-  height: 70vh;
+  height: 1000px;
   font-size: 3vh;
   font-family: Arial, Helvetica, sans-serif;
   padding: 20px;
@@ -71,7 +71,7 @@ main > article {
 
 .rightpanel {
   width: 50vw;
-  height: 70vh;
+  height: 1000px;
   font-size: 3vh;
   font-family: Arial, Helvetica, sans-serif;
   padding: 20px;
