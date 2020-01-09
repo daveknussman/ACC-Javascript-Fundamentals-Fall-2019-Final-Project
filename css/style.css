@@ -56,6 +56,10 @@ main > article {
   padding-bottom: 5px;
 }
 
+.displaynone {
+  display: none;
+}
+
 .leftpanel {
   width: 50vw;
   height: 1000px;

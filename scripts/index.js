@@ -2,6 +2,22 @@
 const api_key='70051f2bccb99e60fb6d5cb964f8d1c6';
 let movieSearchResults = {};
 let tvSearchResults = {};
+const initResultItems = () => { 
+    leftObject.innerText = ' ';
+    rightObject.innerText = ' ';
+    time1.innerText = ' ';
+    time2.innerText = ' ';
+    image1.src = ' ';
+    image1.classList.add('displaynone');
+    image2.src = ' ';
+    image2.classList.add('displaynone');
+    dropdown1.innerText = ' ';
+    dropdown1.value = ' ';
+    dropdown1.classList.add('displaynone');
+    dropdown2.innerText = ' ';
+    dropdown2.value = ' ';
+    dropdown2.classList.add('displaynone');
+};
 
 // Search
 const txtSearch = document.querySelector("#searchWord");
@@ -10,12 +26,11 @@ const btnSearch = document.querySelector("#searchButton");
 btnSearch.addEventListener("click",() => search(txtSearch.value));
 
 // Initially hide result texts, dropdowns, item texts, and images (in case of page refresh)
-//  call functions to do it
+initResultItems();
 
 async function search(searchValue) {
     try {
-        // New search so hide result texts, dropdowns, item texts, and images
-        //  call same functions as above to hide result stuff 
+        initResultItems();
         movieSearchResults = {};
         tvSearchResults = {};
         const rootMovieSearch = 'https://api.themoviedb.org/3/search/movie?';
@@ -30,7 +45,6 @@ async function search(searchValue) {
        console.error('Error:', err);
     }    
 };
-
 
 // Display Search Results
 // const displayMovieResults = () => {
