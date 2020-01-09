@@ -1,0 +1,22 @@
+{
+  "name": "acc-javascript-fundamentals-fall-2019-final-project",
+  "version": "1.0.0",
+  "description": "ACC Javascript Fundamentals Fall 2019 Final Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daveknussman/ACC-Javascript-Fundamentals-Fall-2019-Final-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daveknussman/ACC-Javascript-Fundamentals-Fall-2019-Final-Project/issues"
+  },
+  "homepage": "https://github.com/daveknussman/ACC-Javascript-Fundamentals-Fall-2019-Final-Project#readme",
+  "dependencies": {
+    "axios": "^0.19.1"
+  }
+}

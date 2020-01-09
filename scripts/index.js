@@ -9,6 +9,7 @@
 // })();
 
 // General 
+// const axios = require('axios').default;
 const api_key='70051f2bccb99e60fb6d5cb964f8d1c6';
 let movieSearchResults = {};
 let tvSearchResults = {};
@@ -26,8 +27,8 @@ async function search(searchValue) {
         const rootTVSearch = 'https://api.themoviedb.org/3/search/tv?';
         const keyParm = 'api_key=' + api_key;
         const queryParm = '&query=' + searchValue;
-        movieSearchResults = await axios(rootMovieSearch + keyParm + queryParm);
-        tvSearchResults = await axios(rootTVSearch + keyParm + queryParm);
+        movieSearchResults = await axios.get(rootMovieSearch + keyParm + queryParm);
+        tvSearchResults = await axios.get(rootTVSearch + keyParm + queryParm);
         displayMovieResults();
         displayTVResults();
     } catch (err) {
