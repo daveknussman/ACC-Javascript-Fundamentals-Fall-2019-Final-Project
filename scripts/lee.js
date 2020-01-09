@@ -4,7 +4,11 @@
     
   const displayTVResults = () => 
   {   rightObject.innerText = tvSearchResults.data.total_results + ' TV shows found that matches search criteria'  ;
-      
+      dropdown2.classlist.remove('displaynone') ; 
+      let displayHEADING = document.createElement("OPTION") ;
+      displayHEADING.innerText = "Select a t.v. show." ;
+      displayHEADING.value = "" ;
+      document.querySelector("#dropdown2").appendChild(displayHEADING) ;   
       (tvSearchResults.data.results).forEach((val)=>
       {
         let displayTITLE = document.createElement("OPTION") ;
@@ -31,6 +35,7 @@ const getPICTURE = (pathAddendum) =>
 const baseURL = "https://image.tmdb.org/t/p/w500" ;
 let tvPIC = document.querySelector("#image2") ;
  tvPIC.src = baseURL + pathAddendum ; 
+ tvPIC.classlist.remove('displaynone') ; 
 };  ////////end getPICTURE ////////////////
 /////////// images - end here  //////////////////////////
 

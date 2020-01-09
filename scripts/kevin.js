@@ -1,12 +1,17 @@
 ////////// start code here ////////////////////////////////////////
-// added line
+
 (() => {
     
     const displayMovieResults = () => 
     {   leftObject.innerText = movieSearchResults.data.total_results + ' movies found that matches search criteria' ;
-        
+        dropdown1.classlist.remove('displaynone') ; 
+        let displayHEADING = document.createElement("OPTION") ;
+        displayHEADING.innerText = "Select a movie" ;
+        displayHEADING.value = "" ;
+        document.querySelector("#dropdown1").appendChild(displayHEADING) ;    
+
         (movieSearchResults.data.results).forEach((val)=>
-        {
+        { 
           let displayTITLE = document.createElement("OPTION") ;
           displayTITLE.innerText = (JSON.stringify(val.original_title)) ;
           displayTITLE.value = (JSON.stringify(val.original_title)) ;
@@ -31,6 +36,7 @@ const getPICTURE = (pathAddendum) =>
  const baseURL = "https://image.tmdb.org/t/p/w500" ;
  let moviePIC = document.querySelector("#image1") ;
  moviePIC.src = baseURL + pathAddendum ; 
+ moviePIC.classlist.remove('displaynone') ; 
 };  ////////end getPICTURE ////////////////
 /////////// images - end here  //////////////////////////
 
