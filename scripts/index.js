@@ -24,6 +24,9 @@ const txtSearch = document.querySelector("#searchWord");
 txtSearch.value = ' '; // Blank this out in case of page refresh
 const btnSearch = document.querySelector("#searchButton");
 btnSearch.addEventListener("click",() => search(txtSearch.value));
+document.addEventListener("keyup",(e) => {
+    if (e.keyCode === 13) btnSearch.click();
+});
 
 // Initially hide result texts, dropdowns, item texts, and images (in case of page refresh)
 initResultItems();
