@@ -98,7 +98,7 @@ api_call_func(api_call_string) ;
 
 
 const selectTV = document.querySelector("#dropdown2") ;
-selectTV.addEventListener("click", ()=>
+selectTV.addEventListener("change", ()=>
 { if(selectTV.value) { get_tv(selectTV.value) ; }  
 } ) ;  
 

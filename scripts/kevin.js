@@ -96,7 +96,7 @@ const get_movie = (searchValue) =>
 
 
 const selectMOVIE = document.querySelector("#dropdown1") ;
-selectMOVIE.addEventListener("click", ()=>
+selectMOVIE.addEventListener("change", ()=>
 { if(selectMOVIE.value) { get_movie(selectMOVIE.value) ; }  
 } ) ;  
 
