@@ -8,7 +8,7 @@
       {  
       dropdown2.classList.remove('displaynone') ; 
       let displayHEADING = document.createElement("OPTION") ;
-      displayHEADING.innerText = "Select a t.v. show." ;
+      displayHEADING.innerText = "Select a TV show" ;
       displayHEADING.value = "" ;
       document.querySelector("#dropdown2").appendChild(displayHEADING) ;   
       }    
@@ -37,7 +37,11 @@ const getPICTURE = (pathAddendum) =>
 { ////////// getPICTURE  //////////////////
 const baseURL = "https://image.tmdb.org/t/p/w500" ;
 let tvPIC = document.querySelector("#image2") ;
- tvPIC.src = baseURL + pathAddendum ; 
+
+if(pathAddendum === null)
+{ tvPIC.src = "https://eatatpinkys.com/wp-content/uploads/2019/03/no-image-found.jpg" ;}
+else
+ {tvPIC.src = baseURL + pathAddendum ;} 
  tvPIC.classList.remove('displaynone') ; 
 };  ////////end getPICTURE ////////////////
 /////////// images - end here  //////////////////////////

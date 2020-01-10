@@ -3,12 +3,12 @@
 (() => {
     
     const displayMovieResults = () => 
-    {   leftObject.innerText = movieSearchResults.data.total_results + ' movies found that matches search criteria' ;
+    {   leftObject.innerText = movieSearchResults.data.total_results + ' Movies found that matches search criteria' ;
         if(movieSearchResults.data.total_results > 0)
         {
         dropdown1.classList.remove('displaynone') ; 
         let displayHEADING = document.createElement("OPTION") ;
-        displayHEADING.innerText = "Select a movie" ;
+        displayHEADING.innerText = "Select a Movie" ;
         displayHEADING.value = "" ;
         document.querySelector("#dropdown1").appendChild(displayHEADING) ;  
         }   
@@ -38,7 +38,11 @@ const getPICTURE = (pathAddendum) =>
 { ////////// getPICTURE  //////////////////
  const baseURL = "https://image.tmdb.org/t/p/w500" ;
  let moviePIC = document.querySelector("#image1") ;
- moviePIC.src = baseURL + pathAddendum ; 
+ 
+ if(pathAddendum === null)
+{ moviePIC.src = "https://eatatpinkys.com/wp-content/uploads/2019/03/no-image-found.jpg" ;}
+ else
+ {moviePIC.src = baseURL + pathAddendum ; }
  moviePIC.classList.remove('displaynone') ; 
 };  ////////end getPICTURE ////////////////
 /////////// images - end here  //////////////////////////
