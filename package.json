@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/daveknussman/ACC-Javascript-Fundamentals-Fall-2019-Final-Project#readme",
   "dependencies": {
-    "axios": "^0.19.1"
+    "axios": "^0.21.2"
   }
 }
